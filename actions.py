@@ -2,6 +2,7 @@ import random
 import copy
 from monsters import *
 from dungeon import players
+from items import *
 
 def get_a_monster(chance):
     if random.randint(1, 6) >= chance:
@@ -20,9 +21,11 @@ def treasure(killed_monster=False):
         print
         x = treasure_odds / 2
         if x == 0:
-            print "You get a drop of potion! 10 hp for everyone!"
-            for player in players:
-                players[player].hp += 10
+            # print "You get a drop of potion! 10 hp for everyone!"
+            # for player in players:
+            #     players[player].hp += 10
+            pass
+        
         if x == 1:
             print "You get a small potion! 20 hp for everyone!"
             for player in players:

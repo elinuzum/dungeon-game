@@ -47,9 +47,10 @@ Have fun! """
 # or one of the other types above and change the settings how you like.
 
 players = {
-    'Player1': Marksman('Player1'),
-    'Player2': Madman('Player2'),
-    'Player3' : Warrior('Player3'),
+    'Eli' : FloatingOrb('Eli'),
+    'Burchon' : Warrior('Burchon'),
+    'Isaac' : OverLord('Isaac'),
+    'That...thing' : OverGrownHamster('That...thing')
     }
 
 if __name__ == "__main__":

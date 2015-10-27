@@ -32,9 +32,6 @@ class Monster(Being):
 # name, hp, strength, accuracy. Go ahead and make more monsters by adding to the list
 monsters = [
     Monster('rat', 10,  1,  2, 'bites', RAT_IMAGE),
-    Monster('bat', 10,  1, 4, 'sucks your blood'),
-    Monster('goblin', 20, 3, 6, 'stomps on your toes'),
-    Monster('orc', 30,  4,  6, 'stabs with a spear'),
     Monster('troll', 40,  5, 6, 'swings a heavy club'),
     Monster('dragon', 50, 6,  6, 'breathes flames'),
     Monster('blob', 30, 5,  3, 'blobs', BLOB_IMAGE),
@@ -45,4 +42,10 @@ monsters = [
     Monster('evil sorcerer', 80, 5,  4, 'casts an enchanting spell'),
     Monster('Baby Basilisk', 25, 2,  7, 'wraps it\'s slender body around you'),
     Monster('Basilisk', 40, 3,  7, 'bites at you'),
+    Monster('bat', 10,  1, 4, 'sucks your blood'),
+    Monster('goblin', 20, 3, 6, 'stomps on your toes'),
+    Monster('orc', 30,  4,  6, 'stabs with a spear'),
+    Monster('Zombie', 30, 4, 4, 'rips at your flesh'),
+    Monster('Dinousar', 55, 5, 4, 'attempts to eat you'),
+    Monster('BossCollossalSpider', 400, 10, 9, 'attempts to sting you'),
     ]

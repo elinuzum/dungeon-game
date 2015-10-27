@@ -72,4 +72,31 @@ class Being(object):
 class Person(Being):
     def __init__(self, name):
         self.name = name
+        self.inventory = []
 
+    def end_battle(self):
+        for item in self.inventory:
+           item.use_item()
+
+
+class Item:
+    def __init__(self):
+        self.receive_message = "received an item"  
+        self.drop_message = "item is gone"
+        self.expires = 0
+
+    def receive_item(self):
+        print self.receive_message
+        if self.hp:
+            return self.hp
+        else:
+            return 0
+
+    def drop_item(self):
+        print self.drop_message
+        return False
+
+    def use_item(self):
+        self.expires -= 1
+        if self.expires <= 0:
+            self.drop_item()
